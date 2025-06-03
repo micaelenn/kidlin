@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"name": "API",
+			"path": "./api"
+		},
+		{
+			"name": "Extension",
+			"path": "./extension"
+		},
+		{
+			"name": "Dashboard",
+			"path": "./dashboard"
+		},
+	],
+	"extensions": {
+		"recommendations": [
+			// Share etiding configurations like identation, end of line, charset and more
+			"editorconfig.editorconfig",
+			// Code formatting
+			"esbenp.prettier-vscode",
+			// Code linting
+			"dbaeumer.vscode-eslint",
+			// .env syntax support
+			"mikestead.dotenv",
+			// Tailwind InteliSense
+			"bradlc.vscode-tailwindcss"
+		]
+	},
+	"settings": {
+		// Enable formating when saving files
+		"editor.formatOnSave": true,
+		// Change default code formatter to Prettier
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+		// HTML auto formatting options
+		"html.format.maxPreserveNewLines": 1,
+		"html.format.wrapAttributes": "preserve"
+	}
+}
