@@ -10,8 +10,9 @@ This is a browser extension project based on **Express** and **Vite** developed 
 - [Node.js](https://nodejs.org/en) - 20+
 - [Plop](https://plopjs.com/) - Installed globally
 
-## Structure
+## Apps
 
+On this repository, you can find the project structures under the "apps" folder:
 - `api`: an [Express](https://expressjs.com/pt-br/) API
 - `extension`: a browser extension powered by [React](https://react.dev/) and [Vite](https://vitejs.dev/)
 
@@ -51,3 +52,26 @@ npm install
 ```
 npm run dev
 ```
+
+## Development Tool
+
+To ensure consistency and speed up development, this project uses [Plop.js](https://plopjs.com/) as a code generator to create the initial structure for components and endpoints.
+
+**1. Install plop globally**
+
+```
+$ npm install -g plop
+```
+
+**2. Generate structure**
+
+Run the `plop` command at the root of the *api* or *extension* directory and set the name of the endpoint or component that you want to generate:
+
+**api** 
+
+*"What is the name of the entity?"* - new file structures for a new endpoint.
+
+**extension**
+
+*What is the component name?* - new file structures for a new widget component.
+
