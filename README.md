@@ -29,7 +29,8 @@ To handle data storage from the api, create a new MySQL database named `kidlin_l
 Create an `.env` file at the root of the **api** directory with:
 
 ```
-DB_NAME="kidlin_local_db"
+CONNECT_DATABASE="false"
+DB_NAME=""
 DB_USER=""
 DB_PASSWORD=""
 DB_HOST=""
