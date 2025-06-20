@@ -41,7 +41,7 @@ OPENAI_API_KEY=""
 Create an `.env` file at the root of the **extension** directory with:
 
 ```
-API_URL="http://localhost:3000"
+VITE_API_URL="http://localhost:8080"
 ```
 
 ### 3. Install dependencies and running local serve
