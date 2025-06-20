@@ -3,7 +3,6 @@ import { Request, Response, Router } from "express";
 
 // internal modules
 import { assistantService } from "./assistant.service";
-import { reportsService } from "@/app/reports/reports.service";
 import { setEndpoint } from "@/config/application";
 import { tryCatch } from "@/utils/helpers/tryCatch";
 
@@ -13,16 +12,8 @@ export const assistant = Router();
 assistant.post(
   setEndpoint("assistant"),
   tryCatch(async (req: Request, res: Response) => {
-    const { description, url } = req.body;
+    const { description } = req.body;
     const improvedReport = await assistantService.setImprovedReport(description);
-    
-    const reportData = {
-      report: description,
-      answer: improvedReport.content,
-      url: url
-    }
-
-    await reportsService.save(reportData)
     res.status(200).send({ answer: improvedReport.content });
   })
 );
@@ -31,6 +22,6 @@ assistant.post(
 assistant.get(
   setEndpoint("assistant"),
   tryCatch(async (req: Request, res: Response) => {
-    res.status(200).send({});
+    res.status(200).send({ answer: 'I may never know' });
   })
 );

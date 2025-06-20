@@ -4,7 +4,6 @@ import { Sequelize } from "sequelize-typescript"
 
 // models
 import { Heartbeat } from '@/app/heartbeat/heartbeat.model'
-import { Reports } from "@/app/reports/reports.model";
 
 dotenv.config({ path: __dirname+".env" });
 
@@ -18,6 +17,6 @@ export const sequelize = new Sequelize(database, username, password, {
   host: host,
   dialect: 'mysql',
   port: port,
-  models: [Heartbeat, Reports],
+  models: [Heartbeat],
   logging: false,
 });
