@@ -33,6 +33,7 @@ DB_NAME="kidlin_local_db"
 DB_USER=""
 DB_PASSWORD=""
 DB_HOST=""
+OPENAI_API_KEY=""
 ```
 
 **Extension**
