@@ -3,11 +3,11 @@ import OpenAI from "openai";
 
 // internal modules
 import { Assistant } from "./assistant.model";
-import { openaiApiKey } from "@/config/application";
+import { App } from "@/config/application";
 
 class AssistantService {
   async setImprovedReport(report: string) {
-    const openai = new OpenAI({ apiKey: openaiApiKey });
+    const openai = new OpenAI({ apiKey: App.openaiApiKey });
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
