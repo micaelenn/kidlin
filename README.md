@@ -30,10 +30,6 @@ Create an `.env` file at the root of the **api** directory with:
 
 ```
 CONNECT_DATABASE="false"
-DB_NAME=""
-DB_USER=""
-DB_PASSWORD=""
-DB_HOST=""
 OPENAI_API_KEY=""
 ```
 
