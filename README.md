@@ -6,7 +6,7 @@
 
 This is a browser extension project based on **Express** and **Vite** developed to improve task descriptions
 
-## Requriements
+## Requirements
 - [Node.js](https://nodejs.org/en) - 20+
 - [Plop](https://plopjs.com/) - Installed globally
 
